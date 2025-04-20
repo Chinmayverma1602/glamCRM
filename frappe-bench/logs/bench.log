@@ -1,0 +1,60 @@
+2025-04-18 20:59:39,960 DEBUG cd frappe-bench && python3 -m venv env
+2025-04-18 20:59:44,862 DEBUG cd frappe-bench && /home/roshan-singh/PycharmProjects/glam/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-18 20:59:47,523 DEBUG cd frappe-bench && /home/roshan-singh/PycharmProjects/glam/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-04-18 20:59:48,687 LOG Getting frappe
+2025-04-18 20:59:48,687 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-04-18 20:59:56,623 LOG Installing frappe
+2025-04-18 20:59:56,623 DEBUG cd /home/roshan-singh/PycharmProjects/glam/frappe-bench && /home/roshan-singh/PycharmProjects/glam/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe 
+2025-04-18 21:01:30,056 DEBUG cd /home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-18 21:01:59,343 DEBUG cd frappe-bench && bench build
+2025-04-18 21:01:59,793 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench build
+2025-04-18 21:03:20,868 LOG setting up backups
+2025-04-18 21:03:20,900 LOG backups were set up
+2025-04-18 21:03:20,900 INFO Bench frappe-bench initialized
+2025-04-18 21:10:19,656 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench start
+2025-04-18 21:10:20,869 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
+2025-04-18 21:10:21,037 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench serve --port 8000
+2025-04-18 21:10:21,137 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker
+2025-04-18 21:10:21,194 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-18 21:15:01,621 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-app library_management
+2025-04-18 21:15:01,628 LOG creating new app library_management
+2025-04-18 21:15:03,458 WARNING /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-app library_management executed with exit code 1
+2025-04-18 21:15:28,560 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-app 1glam
+2025-04-18 21:15:37,651 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-app oneglam
+2025-04-18 21:15:37,657 LOG creating new app oneglam
+2025-04-18 21:16:32,813 LOG Installing oneglam
+2025-04-18 21:16:32,814 DEBUG cd /home/roshan-singh/PycharmProjects/glam/frappe-bench && /home/roshan-singh/PycharmProjects/glam/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/oneglam 
+2025-04-18 21:16:35,919 DEBUG bench build --app oneglam
+2025-04-18 21:16:36,127 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench build --app oneglam
+2025-04-18 21:17:13,557 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-site glam
+2025-04-18 21:23:00,928 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam add-to-hosts
+2025-04-18 21:25:03,438 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam install-app 1glam
+2025-04-18 21:54:14,109 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam install-app 1glam
+2025-04-18 21:54:25,380 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam install-app glam
+2025-04-18 21:57:19,716 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam install-app oneglam
+2025-04-18 21:57:33,870 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench list-apps
+2025-04-18 21:57:37,893 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench list-apps
+2025-04-18 21:57:56,760 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site glam list-apps
+2025-04-18 21:58:29,494 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench set-config -g developer_mode true
+2025-04-18 21:58:33,710 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench start
+2025-04-18 21:58:34,222 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench serve --port 8000
+2025-04-18 21:58:34,244 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
+2025-04-18 21:58:34,353 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker
+2025-04-18 21:58:34,497 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-18 21:59:03,355 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench new-site erpnext.localhost
+2025-04-18 22:02:34,848 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench get-app https://github.com/frappe/erpnext
+2025-04-18 22:02:34,860 LOG Getting erpnext
+2025-04-18 22:02:34,860 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2025-04-18 22:02:43,446 LOG Installing erpnext
+2025-04-18 22:02:43,446 DEBUG cd /home/roshan-singh/PycharmProjects/glam/frappe-bench && /home/roshan-singh/PycharmProjects/glam/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/erpnext 
+2025-04-18 22:02:57,072 DEBUG cd /home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-18 22:02:58,448 DEBUG bench build --app erpnext
+2025-04-18 22:02:58,972 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench build --app erpnext
+2025-04-18 22:03:52,016 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --site erpnext.localhost install-app erpnext
+2025-04-19 00:00:02,625 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --verbose --site all backup
+2025-04-19 18:00:01,550 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --verbose --site all backup
+2025-04-20 17:55:41,414 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench start
+2025-04-20 17:55:43,084 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-20 17:55:43,293 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench serve --port 8000
+2025-04-20 17:55:43,699 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
+2025-04-20 17:55:43,951 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker

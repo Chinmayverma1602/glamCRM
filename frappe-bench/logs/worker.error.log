@@ -1,0 +1,615 @@
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+2025-04-18 21:24:28,676 [Job glam||a266d6b1-4311-4c60-90f3-13957c406ecd]: exception raised while executing (frappe.utils.background_jobs.execute_job)
+Traceback (most recent call last):
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py", line 1643, in perform_job
+    return_value = job.perform()
+                   ^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/job.py", line 1344, in perform
+    self._result = self._execute()
+                   ^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/job.py", line 1378, in _execute
+    result = self.func(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 234, in execute_job
+    frappe.init(site, force=True)
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 270, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1371, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1212, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1177, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1207, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1148, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'oneglam'
+
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+2025-04-18 21:24:28,705 [Job glam||e22565c0-2755-448a-8545-6e7633e3f258]: exception raised while executing (frappe.utils.background_jobs.execute_job)
+Traceback (most recent call last):
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py", line 1643, in perform_job
+    return_value = job.perform()
+                   ^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/job.py", line 1344, in perform
+    self._result = self._execute()
+                   ^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/job.py", line 1378, in _execute
+    result = self.func(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 234, in execute_job
+    frappe.init(site, force=True)
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 270, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1371, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1212, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1177, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1207, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roshan-singh/PycharmProjects/glam/frappe-bench/apps/frappe/frappe/__init__.py", line 1148, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'oneglam'
+
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=29403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+2025-04-18 21:58:26,051 Could not connect to Redis instance: Connection closed by server. Retrying in 2 seconds...
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=31903) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/dropbox/session.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/channel.py:83: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  EPOCH = datetime.datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/dropbox/session.py:1: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/channel.py:83: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  EPOCH = datetime.datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/googleapiclient/model.py:30: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=10578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/roshan-singh/PycharmProjects/glam/frappe-bench/env/lib/python3.12/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
