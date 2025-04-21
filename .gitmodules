@@ -1,2 +1,11 @@
+[submodule "frappe-bench/apps/frappe"]
+    path = frappe-bench/apps/frappe
+    url = https://github.com/frappe/frappe.git
+
+[submodule "frappe-bench/apps/erpnext"]
     path = frappe-bench/apps/erpnext
     url = https://github.com/frappe/erpnext.git
+
+[submodule "apps/oneglam"]
+    path = apps/oneglam
+    url = https://github.com/Chinmayverma1602/glamCRM
