@@ -65,3 +65,16 @@
 2025-04-21 14:02:29,780 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
 2025-04-21 14:02:29,991 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker
 2025-04-21 14:02:29,992 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-21 18:00:01,579 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --verbose --site all backup
+2025-04-22 00:00:01,943 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --verbose --site all backup
+2025-04-22 14:48:56,119 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench start
+2025-04-22 14:48:56,696 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
+2025-04-22 14:48:56,707 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-22 14:48:56,762 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench serve --port 8000
+2025-04-22 14:48:56,873 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker
+2025-04-22 18:00:02,183 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench --verbose --site all backup
+2025-04-22 18:10:18,692 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench start
+2025-04-22 18:10:19,208 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench schedule
+2025-04-22 18:10:19,315 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench worker
+2025-04-22 18:10:19,366 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench watch
+2025-04-22 18:10:19,426 INFO /home/roshan-singh/PycharmProjects/glam/.venv1/bin/bench serve --port 8000
